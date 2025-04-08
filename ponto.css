@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  background-color: #312c85;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+ul li a {
+  color: #FFF;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul li a:hover {
+  color: #999292;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+main {
+  padding-top: 150px;
+  max-width: 1000px;
+  margin: 0 0;
+}
+
+.pontos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  padding: 4px;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.ponto-entry {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  padding: 20px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ponto-entry p {
+  margin: 6px 0;
+  font-size: 16px;
+  color: #2c3e50;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.ponto-entry img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 12px;
+  object-fit: cover;
+}
+
+@media (max-width: 600px) {
+  .pontos-container {
+    grid-template-columns: 1fr;
+    padding: 8px;
+  }
+
+  .ponto-entry {
+    padding: 16px;
+  }
+}
