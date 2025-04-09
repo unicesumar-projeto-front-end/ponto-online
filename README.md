@@ -1,7 +1,7 @@
 # PontOn
 
 #### Grupo
-Jonas Nogueira Neto, Lucas D., Gabriel Teixeira
+Jonas Nogueira Neto, Lucas Dombrowski, Gabriel Teixeira
 
 PontOn é uma aplicação para registro de pontos com funcionalidades de captura de imagem, geolocalização e armazenamento local. O objetivo é permitir que os usuários registrem seus pontos de forma prática e visualizem os registros posteriormente.
 
